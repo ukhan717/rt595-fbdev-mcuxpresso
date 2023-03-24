@@ -1,0 +1,7 @@
+.settings/
+Debug/
+*.md
+*.dtd
+*.png
+*.bat
+*.icf
