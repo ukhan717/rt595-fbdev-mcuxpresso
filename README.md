@@ -1,4 +1,4 @@
-# fbdev_freertos
+# rt595-fbdev-mcuxpresso
 
 The NXP `fbdev_freertos` example for the EVK-MIMXRT595, exported from MCUXpresso
 IDE as a standalone project and pointed at a MIPI DSI panel.
@@ -37,7 +37,7 @@ An MCUXpresso IDE export bundles what it needs, so `CMSIS/`, `freertos/`,
 ## Building
 
 Import into MCUXpresso IDE as an existing project and build. There are no
-armgcc, IAR or MDK projects here, unlike `xenon`.
+armgcc, IAR or MDK projects here, unlike `rt595-fbdev-dmb`.
 
 ## Choosing a panel
 
@@ -58,11 +58,11 @@ done:
 
 | Repo | Form | On top of stock |
 |---|---|---|
-| `fbdev_freertos` | MCUXpresso IDE export, self-contained | default panel only |
-| `mipi-rt595` | inside a full SDK tree | default panel, `DMB_DISPLAY` id, FlexIO geometry |
-| `xenon` | standalone, armgcc + IAR + MDK | the above plus DSI timings for the DMB panel |
+| `rt595-fbdev-mcuxpresso` | MCUXpresso IDE export, self-contained | default panel only |
+| `rt595-fbdev-sdk` | inside a full SDK tree | default panel, `DMB_DISPLAY` id, FlexIO geometry |
+| `rt595-fbdev-dmb` | standalone, armgcc + IAR + MDK | the above plus DSI timings for the DMB panel |
 
-`xenon` is the furthest along. If you are picking up the DMB panel work, start
+`rt595-fbdev-dmb` is the furthest along. If you are picking up the DMB panel work, start
 there.
 
 ## Licence
