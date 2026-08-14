@@ -1,7 +1,14 @@
-.settings/
+# Build output
 Debug/
-*.md
-*.dtd
-*.png
-*.bat
-*.icf
+Release/
+
+# IDE and editor state
+.settings/
+.metadata/
+.vscode/
+.idea/
+*.launch
+
+# OS clutter
+.DS_Store
+Thumbs.db
