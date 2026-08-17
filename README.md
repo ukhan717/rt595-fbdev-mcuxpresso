@@ -37,7 +37,7 @@ An MCUXpresso IDE export bundles what it needs, so `CMSIS/`, `freertos/`,
 ## Building
 
 Import into MCUXpresso IDE as an existing project and build. There are no
-armgcc, IAR or MDK projects here, unlike `rt595-fbdev-dmb`.
+armgcc, IAR or MDK projects here.
 
 ## Choosing a panel
 
@@ -50,20 +50,6 @@ armgcc, IAR or MDK projects here, unlike `rt595-fbdev-dmb`.
 | `DEMO_PANEL_RK055IQH091` | 540x960 MIPI |
 | `DEMO_PANEL_RM67162` | G1120B0MIPI circular smart panel |
 | `DEMO_PANEL_RK055MHD091` | RK055MHD091A0-CTG, 720x1280 MIPI |
-
-## Related repositories
-
-Three repos hold versions of this same example, in increasing order of work
-done:
-
-| Repo | Form | On top of stock |
-|---|---|---|
-| `rt595-fbdev-mcuxpresso` | MCUXpresso IDE export, self-contained | default panel only |
-| `rt595-fbdev-sdk` | inside a full SDK tree | default panel, `DMB_DISPLAY` id, FlexIO geometry |
-| `rt595-fbdev-dmb` | standalone, armgcc + IAR + MDK | the above plus DSI timings for the DMB panel |
-
-`rt595-fbdev-dmb` is the furthest along. If you are picking up the DMB panel work, start
-there.
 
 ## Licence
 
